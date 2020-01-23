@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ContosoUniversity.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class TitanMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
