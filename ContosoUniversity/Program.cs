@@ -1,4 +1,5 @@
 using ContosoUniversity.Data;
+using ContosoUniversity.Data;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,8 @@ namespace ContosoUniversity
                 {
                     var context = services.GetRequiredService<SchoolContext>();
                     // context.Database.EnsureCreated();
+
+                    context.DatabaseMigrate();
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)
